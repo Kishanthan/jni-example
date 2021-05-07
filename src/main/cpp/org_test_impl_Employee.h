@@ -23,11 +23,7 @@ JNIEXPORT jstring JNICALL Java_org_test_impl_Employee_setName
 JNIEXPORT jint JNICALL Java_org_test_impl_Employee_setId
   (JNIEnv *, jobject, jint);
 
-
-int verifyName(jstring, JNIEnv *);
-
 #ifdef __cplusplus
 }
 #endif
 #endif
-

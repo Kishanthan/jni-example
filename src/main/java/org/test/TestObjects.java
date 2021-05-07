@@ -21,7 +21,7 @@ import org.test.api.Person;
 
 public class TestObjects {
 
-    static private String gl_name = "John Doe";
+    static private String gl_name = "Global John Doe";
 
 
     static {
@@ -44,9 +44,9 @@ public class TestObjects {
         double salary = 450.67;
 
         instance.createUser(otherName, salary);
-        instance.createUser(gl_name, salary);
         instance.createUser("Some Name", 670.432);
-
+        UserObject userObject = instance.createUser(gl_name, salary);
+        instance.printUserData(userObject);
         foo("Test");
     }
 

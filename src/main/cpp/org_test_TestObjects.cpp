@@ -14,13 +14,13 @@ JNIEXPORT jobject JNICALL Java_org_test_TestObjects_createUser
     env->SetObjectField(newUserData, nameField, name);
     env->SetDoubleField(newUserData, balanceField, balance);
 
-    char * nativeString;
-    const char * _nativeString = env->GetStringUTFChars(name, 0);
-    nativeString = strdup(_nativeString);
-    env->ReleaseStringUTFChars(nameStr, _nativeString);
-
-    char buffer[10];
-    strcpy(buffer, nativeString);
+//    char * nativeString;
+//    const char * _nativeString = env->GetStringUTFChars(name, 0);
+//    nativeString = strdup(_nativeString);
+//    env->ReleaseStringUTFChars(nameStr, _nativeString);
+//
+//    char buffer[10];
+//    strcpy(buffer, nativeString);
 
     return newUserData;
 }

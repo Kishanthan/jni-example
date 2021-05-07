@@ -9,19 +9,19 @@ extern "C" {
 #endif
 /*
  * Class:     org_test_TestObjects
- * Method:    createUser
- * Signature: (Ljava/lang/String;D)Lorg/test/UserObject;
- */
-JNIEXPORT jobject JNICALL Java_org_test_TestObjects_createUser
-  (JNIEnv *, jobject, jstring, jdouble);
-
-/*
- * Class:     org_test_TestObjects
  * Method:    printUserData
  * Signature: (Lorg/test/UserObject;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_org_test_TestObjects_printUserData
   (JNIEnv *, jobject, jobject);
+
+/*
+ * Class:     org_test_TestObjects
+ * Method:    createUser
+ * Signature: (Ljava/lang/String;D)Lorg/test/UserObject;
+ */
+JNIEXPORT jobject JNICALL Java_org_test_TestObjects_createUser
+  (JNIEnv *, jobject, jstring, jdouble);
 
 #ifdef __cplusplus
 }
